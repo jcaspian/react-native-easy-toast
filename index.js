@@ -14,10 +14,10 @@ import {
     Animated,
     Dimensions,
     Text,
-    ViewPropTypes as RNViewPropTypes,
+    //ViewPropTypes as RNViewPropTypes,
 } from 'react-native'
 
-const ViewPropTypes = RNViewPropTypes || View.propTypes;
+//const ViewPropTypes = RNViewPropTypes || View.propTypes;
 import {PropTypes} from 'prop-types';
 export const DURATION = {
     LENGTH_LONG: 2000,
@@ -135,13 +135,15 @@ const styles = StyleSheet.create({
 });
 
 Toast.propTypes = {
-    style: ViewPropTypes.style,
+    //style: ViewPropTypes.style,
+    style: PropTypes.object,
     position: PropTypes.oneOf([
         'top',
         'center',
         'bottom',
     ]),
-    textStyle: Text.propTypes.style,
+    //textStyle: Text.propTypes.style,
+    textStyle: PropTypes.object,
     positionValue:PropTypes.number,
     fadeInDuration:PropTypes.number,
     fadeOutDuration:PropTypes.number,
