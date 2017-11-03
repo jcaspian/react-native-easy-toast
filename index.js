@@ -136,14 +136,14 @@ const styles = StyleSheet.create({
 
 Toast.propTypes = {
     //style: ViewPropTypes.style,
-    style: PropTypes.object,
+    style: PropTypes.number,
     position: PropTypes.oneOf([
         'top',
         'center',
         'bottom',
     ]),
     //textStyle: Text.propTypes.style,
-    textStyle: PropTypes.object,
+    textStyle: PropTypes.number,
     positionValue:PropTypes.number,
     fadeInDuration:PropTypes.number,
     fadeOutDuration:PropTypes.number,
